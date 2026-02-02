@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My Static Site</title>
+    <meta name="description" content="A simple static website hosted on GitHub Pages." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./">My Static Site</a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Simple static website</h1>
+          <p>
+            Drop these files into a GitHub repo and enable GitHub Pages to publish.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#features">See features</a>
+            <a class="button" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <p class="small muted" id="status">Loading status…</p>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2>Features</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Fast</h3>
+              <p>No build tools required. Just HTML/CSS/JS.</p>
+            </article>
+            <article class="card">
+              <h3>Responsive</h3>
+              <p>Looks good on mobile and desktop.</p>
+            </article>
+            <article class="card">
+              <h3>GitHub Pages ready</h3>
+              <p>Works out of the box as a static site.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            Edit <code>index.html</code> to change content, <code>styles.css</code> to change the look,
+            and <code>script.js</code> for any interactivity.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <form class="form" id="contactForm">
+            <label>
+              Name
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Say something…" required></textarea>
+            </label>
+
+            <button class="button primary" type="submit">Send</button>
+            <p class="small muted" id="formNote">
+              This demo form doesn’t send emails (static site). It just shows an alert.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© <span id="year"></span> My Static Site</span>
+        <a class="muted" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
